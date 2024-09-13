@@ -604,8 +604,8 @@ body {
 	--h5-color: var(--muted-blue);
 	--h6-color: var(--muted-purple);
 
-	--text-highlight-bg: var(--faded-yellow);
-	--text-highlight-fg: var(--light0-hard);
+	--text-highlight-bg: var(--background-primary-alt);
+	--text-highlight-fg: var(--dark-text);
 
 	/* link colors for one */
 	--text-accent: var(--light0-hard);
@@ -620,8 +620,8 @@ body {
 	--inline-title-color: var(--light-text);
 
 	/* --bold-color: var(--faded-yellow); */
-	--bold-color: #000000;
-	--italic-color: var(--faded-yellow);
+	--bold-color: var(--dark-text-muted);
+	--italic-color: var(--dark-text-muted);
 
 	--checkbox-color: var(--light4);
 	--checkbox-color-hover: var(--light4);
@@ -638,8 +638,8 @@ body {
 	--text-selection: rgba(var(--neutral-red-x), 0.6);
 	--flashing-background: rgba(var(--neutral-red-x), 0.3);
 
-	--code-normal: var(--neutral-blue);
-	--code-background: var(--light1);
+	--code-normal: rgb(232, 105, 8);
+	--code-background: var(--dark2);
 
 	--mermaid-note: var(--neutral-blue);
 	--mermaid-actor: var(--light3);
@@ -754,7 +754,7 @@ pre[class*="language-"] {
 .cm-inline-code {
 	border-radius: var(--radius-s);
 	font-size: var(--code-size);
-	padding: 0.1em 0.25em;
+	padding: 1.3em 1.5em;
 }
 
 /* Keep list bullet padding the same between viewer and editor. */
@@ -806,6 +806,7 @@ This assumes --list-indent is default at 2em.
 
 .cm-active {
 	background-color: var(--cursor-line-background) !important;
+	color: var(--accent-hover) !important;
 }
 
 .nav-file-tag {

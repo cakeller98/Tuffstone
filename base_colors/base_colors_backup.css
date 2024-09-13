@@ -1,0 +1,47 @@
+:root {
+	/* defaults */
+	/* the purpose of this file is to provide a set of colors I can read in to python and then reformat into the proper obsidian css format
+	this is because obsidian doesn't like rgb((0-255), (0-255), (0-255)) or
+	#rrggbb and preferse bar (0-255), (0-255), (0-255) which does not allow me
+	to use the color utilities in vscode to adjust the colors visually.
+	It's a stupid hack but it'll work.
+
+	I'll also add the variables without the -x and their conversion from the -x variables using the rgb(var(--variable-name)) format so that we can just copy/paste the entire list of defaults at one time.
+
+	we will also maintain the extra newlinne between each section so that it keeps the logical groups of colors separated in the same way as they are in the original file.
+	*/
+	--dark0-hard-x: #1d2021;
+	--dark0-x: #282828;
+	--dark0-soft-x: #32302f;
+	--dark1-x: #3c3836;
+	--dark2-x: #504945;
+	--dark3-x: #665c54;
+	--dark4-x: #7c6f64;
+	--gray-x: #928374;
+	--dark-text-x: #654735;
+	--dark-text-faint-x: #b37e5d;
+	--dark-text-muted-x: #73513c;
+
+	--light0-hard-x: #f9f5d7;
+	--light0-x: #fbf1c7;
+	--light0-soft-x: #f2e5bc;
+	--light1-x: #ebdbb2;
+	--light2-x: #d5c4a1;
+	--light3-x: #bdae93;
+	--light4-x: #a89984;
+	--light-text-x: #d4be98;
+
+	--neutral-red-x: #ea6962;
+	--neutral-green-x: #a9b665;
+	--neutral-yellow-x: #e78a4e;
+	--neutral-blue-x: #7daea3;
+	--neutral-purple-x: #d3869b;
+	--neutral-aqua-x: #89b482;
+
+	--faded-red-x: #c14a4a;
+	--faded-green-x: #6c782e;
+	--faded-yellow-x: #c35e0a;
+	--faded-blue-x: #45707a;
+	--faded-purple-x: #945e80;
+	--faded-aqua-x: #4c7a5d;
+}

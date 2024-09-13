@@ -1,0 +1,52 @@
+:root {
+	/* defaults */
+	/* the purpose of this file is to provide a set of colors I can read in to python and then reformat into the proper obsidian css format
+	this is because obsidian doesn't like rgb((0-255), (0-255), (0-255)) or
+	#rrggbb and preferse bar (0-255), (0-255), (0-255) which does not allow me
+	to use the color utilities in vscode to adjust the colors visually.
+	It's a stupid hack but it'll work.
+
+	I'll also add the variables without the -x and their conversion from the -x variables using the rgb(var(--variable-name)) format so that we can just copy/paste the entire list of defaults at one time.
+
+	we will also maintain the extra newlinne between each section so that it keeps the logical groups of colors separated in the same way as they are in the original file.
+	*/
+	--light-text-x: hsl(38, 1%, 85%);
+	--light-text-muted-x: hsl(38, 1%, 70%);
+	--light-text-faint-x: hsl(38, 1%, 80%);
+
+	--dark0-hard-x: hsl(195, 6%, 12%);
+	--dark0-x: hsl(0, 0%, 16%);
+	--dark0-soft-x: hsl(20, 3%, 19%);
+	--dark1-x: hsl(20, 5%, 22%);
+	--dark2-x: hsl(22, 7%, 29%);
+	--dark3-x: hsl(27, 10%, 36%);
+	--dark4-x: hsl(28, 11%, 44%);
+	--gray-x: hsl(30, 12%, 51%);
+
+	
+	--dark-text-x: hsl(23, 31%, 30%);
+	--dark-text-faint-x: hsl(23, 36%, 53%);
+	--dark-text-muted-x: hsl(23, 31%, 34%);
+	
+	--light0-hard-x: hsl(53, 1%, 75%);
+	--light0-x: hsl(48, 1%, 70%);
+	--light0-soft-x: hsl(46, 1%, 65%);
+	--light1-x: hsl(43, 1%, 60%);
+	--light2-x: hsl(40, 1%, 55%);
+	--light3-x: hsl(39, 1%, 50%);
+	--light4-x: hsl(35, 1%, 40%);
+
+	--neutral-red-x: #ea6962;
+	--neutral-green-x: #a9b665;
+	--neutral-yellow-x: #e78a4e;
+	--neutral-blue-x: #7daea3;
+	--neutral-purple-x: #d3869b;
+	--neutral-aqua-x: #89b482;
+
+	--faded-red-x: #c14a4a;
+	--faded-green-x: #6c782e;
+	--faded-yellow-x: #c35e0a;
+	--faded-blue-x: #45707a;
+	--faded-purple-x: #945e80;
+	--faded-aqua-x: #4c7a5d;
+}

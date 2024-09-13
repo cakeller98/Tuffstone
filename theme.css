@@ -71,6 +71,19 @@
 	--faded-aqua-x: 76, 122, 93;
 	--faded-aqua: rgb(var(--faded-aqua-x));
 
+	--muted-red-x: 193, 74, 74;
+	--muted-red: rgb(var(--muted-red-x));
+	--muted-green-x: 108, 120, 46;
+	--muted-green: rgb(var(--muted-green-x));
+	--muted-yellow-x: 195, 94, 10;
+	--muted-yellow: rgb(var(--muted-yellow-x));
+	--muted-blue-x: 69, 112, 122;
+	--muted-blue: rgb(var(--muted-blue-x));
+	--muted-purple-x: 148, 94, 128;
+	--muted-purple: rgb(var(--muted-purple-x));
+	--muted-aqua-x: 76, 122, 93;
+	--muted-aqua: rgb(var(--muted-aqua-x));
+
 
 	/* @settings
 name: Gruvbox Material Color Overrides
@@ -584,12 +597,12 @@ body {
 	--text-faint: var(--dark-text-faint);
 	--text-muted: var(--dark-text-muted);
 
-	--h1-color: var(--faded-red);
-	--h2-color: var(--faded-yellow);
-	--h3-color: var(--faded-green);
-	--h4-color: var(--faded-aqua);
-	--h5-color: var(--faded-blue);
-	--h6-color: var(--faded-purple);
+	--h1-color: var(--muted-red);
+	--h2-color: var(--muted-yellow);
+	--h3-color: var(--muted-green);
+	--h4-color: var(--muted-aqua);
+	--h5-color: var(--muted-blue);
+	--h6-color: var(--muted-purple);
 
 	--text-highlight-bg: var(--faded-yellow);
 	--text-highlight-fg: var(--light0-hard);
@@ -604,9 +617,10 @@ body {
 
 	--titlebar-text-color-focused: var(--bright-red);
 
-	--inline-title-color: var(--neutral-yellow);
+	--inline-title-color: var(--light-text);
 
-	--bold-color: var(--faded-yellow);
+	/* --bold-color: var(--faded-yellow); */
+	--bold-color: #000000;
 	--italic-color: var(--faded-yellow);
 
 	--checkbox-color: var(--light4);

@@ -1,0 +1,42 @@
+/* Target the SVG canvas background */
+.canvas-background {
+	/* You can adjust the overall size or display properties of the canvas if needed */
+	width: 100%;
+	/* Example: Make sure the canvas covers the whole area */
+	height: 100%;
+}
+
+/* Target the pattern within the SVG */
+.canvas-background pattern {
+	/* Change the pattern size */
+	width: 30px !important;
+	/* Adjust the pattern width */
+	height: 30px !important;
+	/* Adjust the pattern height */
+
+	/* You can also adjust the pattern's position (x, y) */
+	x: 0px !important;
+	/* Reset x-offset */
+	y: 0px !important;
+	/* Reset y-offset */
+}
+
+/* Target the circle within the pattern */
+.canvas-background pattern circle {
+	/* Change the circle's fill color */
+	fill: blue !important;
+	/* Example: Set circle color to blue */
+
+	/* Change the circle's radius */
+	r: 2px !important;
+	/* Increase circle radius */
+}
+
+/* Target the rect that uses the pattern as its fill */
+.canvas-background rect {
+	fill: red !important;
+	/* Example: Replace pattern fill with a solid red color */
+	/* Alternatively, if you want to keep the pattern fill but modify its appearance: */
+	fill-opacity: 0.5 !important;
+	/* Adjust opacity of the pattern */
+}

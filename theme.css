@@ -541,6 +541,7 @@ body {
 .theme-light {
 
 	/* experimental begins */
+	--interactive-normal: var(--color-base-60);
 	--embed-background: #bababa;
 	--shadow-stationary: 5px 5px 10px 2.0px rgba(0, 0, 0, 0.5);
 	--shadow-border-accent: 0 0 0 2px var(--color-accent);
@@ -630,8 +631,8 @@ body {
 	--mermaid-actor: var(--light3);
 	--mermaid-loopline: var(--faded-blue);
 
-	--icon-color-hover: var(--neutral-red);
-	--icon-color-focused: var(--neutral-blue);
+	--icon-color-hover: var(--light-text-faint);
+	--icon-color-focused: var(--light-text);
 
 	--nav-item-color-hover: var(--light-text-faint);
 	--nav-item-color-active: var(--dark-text);

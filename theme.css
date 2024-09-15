@@ -2,11 +2,11 @@
 	--dot-pattern-intensity: 0.5;
 	--canvas-dot-pattern: hsla(0, 0%, var(--color-base-comp-l-100), var(--dot-pattern-intensity));
 	/* the amount of effect the overlay layer has on the canvase background */
-	--canvas-dimmer: 51%;
+	--canvas-dimmer: 100%;
 	/* the amount of affect the overlay layer has on the canvas node */
-	--canvas-node-dimmer: 10%;
+	--canvas-node-dimmer: 100%;
 	/* the brightness of the overlay layer */
-	--canvas-dimmer-intensity: 50%;
+	--canvas-dimmer-intensity: 100%;
 
 }
 
@@ -67,7 +67,7 @@
 	--color-base-70: hsl(var(--color-base-comp-hs), var(--color-base-comp-l-70));
 	--color-base-100: hsl(var(--color-base-comp-hs), var(--color-base-comp-l-100));
 
-	--canvas-dimmer-intensity: 50%;
+	--canvas-background-replacer: 127, 127, 127;
 
 }
 
@@ -127,15 +127,17 @@
 	--color-base-70: hsl(var(--color-base-comp-hs), var(--color-base-comp-l-70));
 	--color-base-100: hsl(var(--color-base-comp-hs), var(--color-base-comp-l-100));
 
+	--canvas-background-replacer: 127, 127, 127;
+
 }
 
-.wrongness .canvas-wrapper .canvas-background {
-	background-color: rgba(127, 127, 127, 0.0);
+.canvas-wrapper .canvas-background {
+	background-color: rgba(var(--canvas-background-replacer), 0.5);
 	position: relative;
 	/* Ensure the overlay is positioned correctly */
 }
 
-.wrongness .canvas-wrapper .canvas-background ::before {
+.canvas-wrapper .canvas-background ::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -143,19 +145,21 @@
 	right: 0;
 	bottom: 0;
 	/* background-color: hsla(0, 0%, 100%, 100%); */
-	background-color: hsla(0, 0%, var(--canvas-dimmer-intensity), var (--canvas-dimmer));
-	mix-blend-mode: screen;
+	background-color: hsla(0, 100%, var(--canvas-dimmer-intensity), var(--canvas-dimmer));
+	mix-blend-mode: multiply;
 	pointer-events: none;
 	/* Prevents interference with canvas interaction */
 }
 
-.wrongness .canvas-node .canvas-node-container {
+
+
+.wrong .canvas-node .canvas-node-container {
 	background-color: var(--primary-background-color);
 	position: relative;
 	/* Ensure the overlay is positioned correctly */
 }
 
-.wrongness .canvas-node .canvas-node-container ::before {
+.wrong .canvas-node .canvas-node-container ::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -167,4 +171,20 @@
 	mix-blend-mode: multiply;
 	pointer-events: none;
 	/* Ensure the overlay doesn't affect interactivity */
+}
+
+.canvas-node-container {
+	background-color: var(--background-primary);
+	/* border-radius: var(32px);*/
+	border: 0.7px solid black;
+	contain: strict;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: var(--shadow-stationary);
 }
